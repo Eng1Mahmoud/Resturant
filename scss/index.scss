@@ -113,11 +113,12 @@ html{
   /*end general style*/
   
   .loud{
-      
-      background-image: url("../img/img/loud-back.jpg");
+    
+      background-image: url("../img/img/back4.jpg");
+      background-position: left;
       background-size: cover;
-      background-position: center;
-      
+      background-origin:content-box;
+      background-repeat:no-repeat ;
       position:absolute;
       height: 100vh;
       width:100%; 
@@ -127,9 +128,9 @@ html{
       z-index: 2000;
          
       .content-loud{
-        
        
-      
+
+       
           img{
               transition:all .7s linear;
               width:500px;

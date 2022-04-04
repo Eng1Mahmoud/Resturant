@@ -152,7 +152,7 @@ let html = document.querySelector("html");
 window.onload = () => {
 
     setTimeout(() => {
-        loud.style.cssText = "display:none !important;";
+        loud.style.cssText = "display:none !important; visibility:hidden";
         text_hearo.classList.add("reset_scale");
         html.style.cssText = "overflow-y: visible !important;  overflow-x: hidden !important;";
        

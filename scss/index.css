@@ -177,9 +177,11 @@ html {
 /*end h4*/
 /*end general style*/
 .loud {
-  background-image: url("../img/img/loud-back.jpg");
+  background-image: url("../img/img/back4.jpg");
+  background-position: left;
   background-size: cover;
-  background-position: center;
+  background-origin: content-box;
+  background-repeat: no-repeat;
   position: absolute;
   height: 100vh;
   width: 100%;
