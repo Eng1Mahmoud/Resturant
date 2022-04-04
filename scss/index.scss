@@ -18,13 +18,15 @@ body{
     font-family:FredokaOne-Regular;   
     overflow-x: hidden !important;
     position:relative;
+    background:transparent;
      
   
     }
 html{
     scroll-behavior:smooth;
     overflow-x: hidden !important;
-    overflow-y: hidden !important 
+    overflow-y: hidden !important;
+     
      
      }
 
@@ -113,48 +115,25 @@ html{
   /*end general style*/
   
   .loud{
-    
-      background-image: url("../img/img/back4.jpg");
-      background-position: left;
-      background-size: cover;
-      background-origin:content-box;
-      background-repeat:no-repeat ;
-      position:absolute;
-      height: 100vh;
-      width:100%; 
-      top:0px;
-      left:0px;
-     
-      z-index: 2000;
-         
-      .content-loud{
-       
-
-       
-          img{
-              transition:all .7s linear;
-              width:500px;
-              height:500;
-              filter: grayscale(30%);
-              -webkit-filter: grayscale(30%);
-              -webkit-transition:all .7s linear;
-              -moz-transition:all .7s linear;
-              -ms-transition:all .7s linear;
-              -o-transition:all .7s linear;
-              animation:routat 30s linear infinite   reverse;
-              padding-right: 120px;
-              -webkit-animation:routat 30s linear infinite   reverse;
+      
+      background: $blue;
+      position:fixed;
+      z-index:3000;
+      height:100vh;
+      width:100%;
+      svg{
+          color:$white;
+          font-size:50px;
+          animation:routat 1s linear infinite   reverse;
+          -webkit-animation:routat 1s linear infinite   reverse;
+          transition:all 1s linear ;
+          -webkit-transition:all 1s linear ;
+          -moz-transition:all 1s linear ;
+          -ms-transition:all 1s linear ;
+          -o-transition:all 1s linear ;
 }
   }
-}
   
-  @media (max-width:576px) {
-    .loud .content-loud img{
-         width:300px !important;height:300px !important;
-         padding-right: 0px;
-        
-  }
-}
   
   /*end loud*/
 .hearo{

@@ -16,7 +16,7 @@ window.onscroll = function () {
 
   var box_service = document.querySelectorAll(".service .container .over .box");
   box_service.forEach(function (box) {
-    if (window.scrollY >= box.offsetTop - 380) {
+    if (window.scrollY >= box.offsetTop - 350) {
       box.classList.add("reset_buttom");
     }
   }); // end service
@@ -25,7 +25,7 @@ window.onscroll = function () {
   var img_about = document.querySelectorAll(".about_us .container .imgs .imgC");
   var number_about = document.querySelectorAll(".about_us .container .row .number");
   img_about.forEach(function (img) {
-    if (window.scrollY >= img.offsetTop - 380) {
+    if (window.scrollY >= img.offsetTop - 350) {
       img.classList.add("reset_scale");
     }
   }); // function incres numbe
@@ -41,7 +41,7 @@ window.onscroll = function () {
     }, 300 / gole);
   }
 
-  if (window.scrollY >= number_about[0].parentElement.offsetTop - 380) {
+  if (window.scrollY >= number_about[0].parentElement.offsetTop - 350) {
     if (!started) {
       number_about.forEach(function (num) {
         count(num);
@@ -54,7 +54,7 @@ window.onscroll = function () {
 
   var head_popular = document.querySelector(".popular .head_popular");
 
-  if (window.scrollY >= head_popular.offsetTop - 380) {
+  if (window.scrollY >= head_popular.offsetTop - 350) {
     head_popular.classList.add("reset_scale");
   } // end head_popular
   // start resturant video and form
@@ -63,11 +63,11 @@ window.onscroll = function () {
   var video = document.querySelector(".resturant .row .video");
   var form = document.querySelector(".resturant .row .form");
 
-  if (window.scrollY >= video.offsetTop - 380) {
+  if (window.scrollY >= video.offsetTop - 350) {
     video.classList.add("reset_left");
   }
 
-  if (window.scrollY >= form.offsetTop - 380) {
+  if (window.scrollY >= form.offsetTop - 350) {
     form.classList.add("reset_right");
   } // end resturant video and form
   //start team
@@ -76,12 +76,12 @@ window.onscroll = function () {
   var head_team = document.querySelector(".chefs .container .head-chefs");
   var team_box = document.querySelectorAll(".chefs .container .chefs-card .box-card");
 
-  if (window.scrollY >= head_team.offsetTop - 380) {
+  if (window.scrollY >= head_team.offsetTop - 350) {
     head_team.classList.add("reset_buttom");
   }
 
   team_box.forEach(function (card) {
-    if (window.scrollY >= card.offsetTop - 380) {
+    if (window.scrollY >= card.offsetTop - 350) {
       card.classList.add("reset_buttom");
     }
   }); // end team
@@ -90,12 +90,12 @@ window.onscroll = function () {
   var head_gallery = document.querySelector(".gallery .container .head-gallery");
   var img_box = document.querySelectorAll(".gallery  .container .row .box-img ");
 
-  if (window.scrollY >= head_gallery.offsetTop - 380) {
+  if (window.scrollY >= head_gallery.offsetTop - 350) {
     head_gallery.classList.add("reset_buttom");
   }
 
   img_box.forEach(function (img) {
-    if (window.scrollY >= img.offsetTop - 380) {
+    if (window.scrollY >= img.offsetTop - 350) {
       img.classList.add("reset_scale");
     }
   }); // end gallery
@@ -109,7 +109,7 @@ var html = document.querySelector("html");
 
 window.onload = function () {
   setTimeout(function () {
-    loud.style.cssText = "display:none !important; visibility:hidden";
+    loud.style.cssText = "display:none !important";
     text_hearo.classList.add("reset_scale");
     html.style.cssText = "overflow-y: visible !important;  overflow-x: hidden !important;";
   }, 3000);

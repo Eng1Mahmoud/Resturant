@@ -17,7 +17,7 @@ window.onscroll = () => {
 let box_service = document.querySelectorAll(".service .container .over .box");
     box_service.forEach( box => {
     
-            if(window.scrollY >= (box.offsetTop - 380)){
+            if(window.scrollY >= (box.offsetTop - 350)){
                 box.classList.add("reset_buttom");
             }
     });
@@ -29,7 +29,7 @@ let img_about = document.querySelectorAll(".about_us .container .imgs .imgC");
 let number_about = document.querySelectorAll(".about_us .container .row .number");
     img_about.forEach( img => {
             
-        if(window.scrollY >= (img.offsetTop - 380)){
+        if(window.scrollY >= (img.offsetTop - 350)){
             
             img.classList.add("reset_scale"); 
         }
@@ -52,7 +52,7 @@ let number_about = document.querySelectorAll(".about_us .container .row .number"
         
     }
     
-        if(window.scrollY >= (number_about[0].parentElement.offsetTop - 380)){
+        if(window.scrollY >= (number_about[0].parentElement.offsetTop - 350)){
          
                   if(!started)
                   {
@@ -70,7 +70,7 @@ let number_about = document.querySelectorAll(".about_us .container .row .number"
 
 let head_popular = document.querySelector(".popular .head_popular");
 
-if(window.scrollY >= (head_popular.offsetTop - 380)){
+if(window.scrollY >= (head_popular.offsetTop - 350)){
             
     head_popular.classList.add("reset_scale"); 
 }
@@ -83,12 +83,12 @@ if(window.scrollY >= (head_popular.offsetTop - 380)){
 let video= document.querySelector(".resturant .row .video");
 let form= document.querySelector(".resturant .row .form");
 
-if(window.scrollY >= (video.offsetTop -380)){
+if(window.scrollY >= (video.offsetTop -350)){
             
     video.classList.add("reset_left"); 
 }
 
-if(window.scrollY >= (form.offsetTop - 380)){
+if(window.scrollY >= (form.offsetTop - 350)){
             
     form.classList.add("reset_right"); 
 }
@@ -102,14 +102,14 @@ if(window.scrollY >= (form.offsetTop - 380)){
 let head_team= document.querySelector(".chefs .container .head-chefs");
 let team_box= document.querySelectorAll(".chefs .container .chefs-card .box-card");
    
-   if(window.scrollY >= (head_team.offsetTop - 380)){
+   if(window.scrollY >= (head_team.offsetTop - 350)){
                
        head_team.classList.add("reset_buttom"); 
    }
    
    team_box.forEach( card => {
                
-       if(window.scrollY >= (card.offsetTop - 380)){
+       if(window.scrollY >= (card.offsetTop - 350)){
            
            card.classList.add("reset_buttom"); 
        }
@@ -124,14 +124,14 @@ let head_gallery = document.querySelector(".gallery .container .head-gallery");
 let img_box= document.querySelectorAll(".gallery  .container .row .box-img ");
 
  
-   if(window.scrollY >= (head_gallery.offsetTop - 380)){
+   if(window.scrollY >= (head_gallery.offsetTop - 350)){
                
        head_gallery.classList.add("reset_buttom"); 
    }
    
    img_box.forEach( img => {
                
-       if(window.scrollY >= (img.offsetTop - 380)){
+       if(window.scrollY >= (img.offsetTop - 350)){
            
            img.classList.add("reset_scale"); 
        }
@@ -151,8 +151,9 @@ let html = document.querySelector("html");
 
 window.onload = () => {
 
+
     setTimeout(() => {
-        loud.style.cssText = "display:none !important; visibility:hidden";
+        loud.style.cssText = "display:none !important";
         text_hearo.classList.add("reset_scale");
         html.style.cssText = "overflow-y: visible !important;  overflow-x: hidden !important;";
        
