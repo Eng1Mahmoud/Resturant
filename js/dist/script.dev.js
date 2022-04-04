@@ -5,10 +5,15 @@ var started = false; // start functions on function onloud
 window.onscroll = function () {
   // start header
   var header = document.querySelector(".header");
+  var up = document.querySelector(".up");
 
   if (window.scrollY >= 200) {
     header.style.cssText = "position:fixed !important; top:0px; left:0px; background-color:#0F172B;";
-  } else {
+    up.style.cssText = "display:flex !important";
+  }
+
+  if (window.scrollY <= 200) {
+    up.style.cssText = "display:none !important";
     header.style.cssText = "position:absolute !important; top:0px; left:0px; background-color:transperant;";
   } //end header
   // start service

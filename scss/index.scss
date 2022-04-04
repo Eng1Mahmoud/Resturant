@@ -786,6 +786,20 @@ html{
    
 }
 .over{overflow: hidden;}
+.up{
+    position: fixed;
+    bottom:50px;
+    right:20px;
+    background:$orang;
+    width: 60px;
+    height:60px;
+    display:none !important;
+    svg{
+        
+        color:$blue;
+        font-size:30px;
+    }
+}
 /*end class animation*/
 
 /*start animation*/

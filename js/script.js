@@ -4,11 +4,14 @@ let started = false;
 window.onscroll = () => {
 // start header
    let header = document.querySelector(".header");
+   let up = document.querySelector(".up");
+   
     if(window.scrollY >= 200) {
         header.style.cssText = "position:fixed !important; top:0px; left:0px; background-color:#0F172B;"; 
-      
+        up.style.cssText = "display:flex !important";
     }
-    else{
+    if(window.scrollY <= 200) {
+        up.style.cssText = "display:none !important";
         header.style.cssText = "position:absolute !important; top:0px; left:0px; background-color:transperant;"; 
     }
 //end header
