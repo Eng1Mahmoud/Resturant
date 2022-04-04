@@ -12,9 +12,10 @@
   font-size: 30px;
 }
 .header .container-fluid h2 {
-  font-size: 40px;
+  font-size: 35px;
   color: #FEA116;
   font-family: "Nunito", sans-serif;
+  cursor: pointer;
 }
 .header .container-fluid .nav-link {
   color: #fff;

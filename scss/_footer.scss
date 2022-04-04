@@ -1,0 +1,133 @@
+/*start footer*/
+footer{
+    background-color: $blue;
+    .container{
+         .box-footer{
+            span{
+                margin-bottom: 20px;
+                 display: block;
+                 color:$orang;
+                 font-size: 20px;
+                 font-weight: bold;
+                 }
+            color:#F1F8FF;
+             ul{
+                 padding:0px;
+                 li{
+                     line-height: 30px;
+                     a{
+                         color:#F1F8FF;
+                         transition: all .3s linear;
+                         -webkit-transition: all .3s linear;
+                         -moz-transition: all .3s linear;
+                         -ms-transition: all .3s linear;
+                         -o-transition: all .3s linear;
+                         font-size: 17px;
+                         font-weight: 500px;
+                     
+                         &:hover{
+                          letter-spacing: 1px;
+                        
+                        } 
+                     }
+                 }
+             }
+             
+             .p{line-height: 30px;font-size: 17px; letter-spacing: .3px;}
+             .social-foot{
+                 padding: 0px;
+                
+                 li{
+                     margin-right:6px;
+                    border:1px solid $white;
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    svg{font-size: 20px;}
+                }
+             }
+             .email{
+               
+                border:2px solid $orang;
+                 background-color: $white;
+                 width: 100%;
+                 height:60px;
+                 input[type = "email"]{
+                     border:none;
+                     outline: none;
+                 }
+                 input[type = "email"]::placeholder{font-size: 18px;}
+                 button{
+                     outline: none;
+                     border: none;
+                     color: $white;
+                     background-color: $orang;
+                     height: 40px;
+                     padding:5px;
+                     border-radius: 5px;
+                     -webkit-border-radius: 5px;
+                     -moz-border-radius: 5px;
+                     -ms-border-radius: 5px;
+                     -o-border-radius: 5px;
+                    
+                 }
+                 
+                 &:hover, &:active, &:focus{
+                    box-shadow: 1px 1px 5px 0px $orang,
+                    -1px -1px 5px 0px $orang;
+                 }
+             }
+         }
+         
+         .end{
+             color:$white;
+             span{
+                 padding-left: 5px;
+                 color:$orang;
+                 font-size: 16px;
+                 font-weight: bold;
+                 &::after{
+                     width:30px;
+                 }
+             }
+             
+             
+             ul{
+                padding-right: 20px;
+                 li{
+                      
+                     border-left: 1.5px solid $dark;
+                     padding:10px;
+                     a{
+                         color:$white;
+                     }
+                 }
+                 & li:first-child{
+                     border: none;
+                 }
+             }
+         }
+   }
+}
+/*end footer*/
+
+/*start media footer*/
+@media (max-width:768px) {
+
+footer .container .end{
+    
+   text-align: center;
+}
+ footer .container .end .d-flex {
+    
+    justify-content: center !important;
+    margin-top:15px;
+}   
+}
